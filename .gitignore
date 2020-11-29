@@ -1,0 +1,6 @@
+
+.idea/
+*.py[cod]
+all-addons/
+odoo.conf
+orm_explorer_base/__pycache__/

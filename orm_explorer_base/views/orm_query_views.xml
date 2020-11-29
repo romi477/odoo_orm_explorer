@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_orm_query_tree" model="ir.ui.view">
+        <field name="model">orm.query</field>
+        <field name="name">Default tree view for orm.query</field>
+        <field name="type">tree</field>
+        <field type="xml" name="arch">
+            <tree>
+                <field name="id"/>
+                <field name="search_query"/>
+                <field name="sql_text"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_orm_query_form" model="ir.ui.view">
+        <field name="model">orm.query</field>
+        <field name="name">Default form view for orm.query</field>
+        <field name="type">form</field>
+        <field type="xml" name="arch">
+            <form>
+                <group>
+                    <field name="search_query"/>
+                    <field name="sql_text"/>
+                    <field name="fetch_result"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+</odoo>

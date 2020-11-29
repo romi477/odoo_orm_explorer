@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="menu_orm_explorer"
+        name="ORM Explorer"
+        action="action_orm_query_tree"
+        sequence="10"/>
+
+    <menuitem
+        id="menu_orm_query"
+        name="Search"
+        action="action_orm_query_wizard"
+        parent="menu_orm_explorer"
+        sequence="1"/>
+
+</odoo>

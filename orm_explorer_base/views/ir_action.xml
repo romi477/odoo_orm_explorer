@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_orm_query_tree" model="ir.actions.act_window">
+        <field name="name">Queries</field>
+        <field name="res_model">orm.query</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_orm_query_wizard" model="ir.actions.act_window">
+        <field name="name">ORM Search Query Tool</field>
+        <field name="res_model">orm.query.wizard</field>
+        <field name="view_id" ref="orm_explorer_base.view_orm_query_wizard_form"/>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_orm_query_wizard_form" model="ir.ui.view">
+        <field name="model">orm.query.wizard</field>
+        <field name="name">Default form view for orm.query.wizard</field>
+        <field name="type">form</field>
+        <field type="xml" name="arch">
+            <form>
+                <group>
+                    <field name="model_id" options="{'no_open': True, 'no_create': True}"/>
+                    <field name="model"/>
+                    <field name="domain_expr"/>
+                    <field name="offset"/>
+                    <field name="limit"/>
+                    <field name="order"/>
+                    <field name="count"/>
+                </group>
+                <group>
+                    <field name="full_query"/>
+                    <field name="sql_text"/>
+                    <field name="fetch_result"/>
+                </group>
+                <footer>
+                    <button name="execute_orm_search" string="Fetch" type="object" class="oe_highlight"/>
+                    <button name="save_sql" string="Save SQL" type="object" class="oe_highlight"
+                            attrs="{'invisible': [('full_query', '=', False), ('sql_text', '=', False)]}"/>
+                    <button string="Close" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>
